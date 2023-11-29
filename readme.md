@@ -30,7 +30,7 @@ Edit the `settings.js` file and add details for your calendars.
 TBC
 
 ```
-$ clasp create --type api --title "Logseq Calendar Merge"
+$ clasp create --type api --title "Morrisons Calendar Merge"
 ```
 
 ## Push the project
