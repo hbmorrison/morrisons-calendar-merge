@@ -1,0 +1,27 @@
+const CALENDARS_TO_MERGE = {
+  'Me': 'me@gmail.com',
+  'You': 'you@gmail.com',
+  'Both': 'family0000000000000000000@group.calendar.google.com',
+  'Me Work': 'nnnnnnnnnnnnnnnnnnnnn@group.calendar.google.com',
+  'You Work': 'mmmmmmmmmmmmmmmmmmmmm@group.calendar.google.com'
+};
+
+// The ID of the shared calendar
+const CALENDAR_TO_MERGE_INTO = 'lllllllllllllllllllllll@group.calendar.google.com';
+
+// Number of days in the past and future to sync.
+const SYNC_DAYS_IN_PAST = 7;
+const SYNC_DAYS_IN_FUTURE = 30;
+
+// Unique character to use in the title of the event to identify it as a clone.
+// This is used to delete the old events.
+// https://unicode-table.com/en/200B/
+const SEARCH_CHARACTER = '\u200B';
+
+// Limit which events are shown from work calendars.
+const YOUR_WORK_CALENDAR_RE = /your work/i
+const MY_WORK_CALENDAR_RE = /my work/i
+const YOUR_WORK_SUMMARY_RE = /day|night|office/i
+const MY_WORK_SUMMARY_RE = /wfh|office/i
+
+const ENDPOINT_BASE = 'https://www.googleapis.com/calendar/v3/calendars';
